@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="java2.js"></script>
+    <title>Document</title>
+</head>
+<header>
+    <H1 class="maintitle">My first gallery</H1>
+</header>
+
+<body>
+    <div class="gallerycontainer">
+
+        <div class="gallerysliders">
+            <img src="image1.jpg" style="width: 100%">
+        </div>
+
+        <div class="gallerysliders">
+            <img src="image2.jpg" style="width: 100%">
+        </div>
+
+        <div class="gallerysliders">
+            <img src="image3.jpg" style="width: 100%">
+        </div>
+
+        <div class="gallerysliders">
+            <img src="image4.jpg" style="width: 100%">
+        </div>
+
+        <div class="gallerysliders">
+            <img src="image5.jpg" style="width: 100%">
+        </div>
+
+        <a class="previousbutton" onclick="plssliders(-1)">&#10094;</a>
+        <a class="nextbutton" onclick="plssliders(1)">&#10095;</a>
+
+        <div class="cptcontainer">
+            <p id="subtitle"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="point cursor" src="image1.jpg" style="width: 100%;" onclick="actualslide(1)" alt="Bridge of Budapest">
+            </div>
+            <div class="column">
+                <img class="point cursor" src="image2.jpg" style="width: 100%;" onclick="actualslide(2)" alt="The Eiffel Tower">
+            </div>
+            <div class="column">
+                <img class="point cursor" src="image3.jpg" style="width: 100%;" onclick="actualslide(3)" alt="NYC">
+            </div>
+            <div class="column">
+                <img class="point cursor" src="image4.jpg" style="width: 100%;" onclick="actualslide(4)" alt="Paris Metro">
+            </div>
+            <div class="column">
+                <img class="point cursor" src="image5.jpg" style="width: 100%;" onclick="actualslide(5)" alt="3D ad">
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
